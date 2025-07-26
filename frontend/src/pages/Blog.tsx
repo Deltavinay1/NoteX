@@ -11,7 +11,7 @@ export const Blog = () => {
             id: parseInt(id || "1")
         }
     );
-    if (loading) {
+    if (loading || !blog) {
         return <div>
             <Appbar />
             <Spinner />
